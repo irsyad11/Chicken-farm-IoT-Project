@@ -9,14 +9,14 @@ export default function App() {
     <>
       <Navbar />
 
-      <div className="bg-slate-50">
-        <Routes>
-          <Route path="/" element={<Index />}></Route>
-          <Route path="/tentang-kami" element={<Index />}></Route>
-          <Route path="/login" element={<Index />}></Route>
-          <Route path="/dashboard" element={<Index />}></Route>
-        </Routes>
-      </div>
+      <div className="bg-slate-50"></div>
+
+      <Routes>
+        <Route path="/" element={<Index />}></Route>
+        <Route path="/tentang-kami" element={<Index />}></Route>
+        <Route path="/login" element={<Index />}></Route>
+        <Route path="/dashboard" element={<Index />}></Route>
+      </Routes>
 
       <Footer />
     </>

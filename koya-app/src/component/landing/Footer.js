@@ -3,11 +3,13 @@ export default function Footer() {
     <>
       <footer className="bg-koya mt-32">
         <div className="container flex  justify-between p-10">
-          <a href="#">
-            <img src="/LogoFoot.svg" alt="Logo" />
-          </a>
-          <div className="flex space-x-10 text-white">
-            <div className="flex">
+          <div className="w-max mx-auto sm:mx-0">
+            <a href="#">
+              <img src="/LogoFoot.svg" alt="Logo" />
+            </a>
+          </div>
+          <div className="hidden w-max lg:flex lg:space-x-10 text-white">
+            <div className="lg:flex">
               <h3 className="mr-5 font-bold">Kontak Kami :</h3>
               <ul>
                 <li>
@@ -21,7 +23,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="flex">
+            <div className="hidden lg:flex">
               <h3 className="mr-5 font-bold">Pelayanan</h3>
               <ul>
                 <li>
@@ -35,7 +37,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="hidden lg:block">
               <ul className="flex">
                 <li className="w-max mx-auto">
                   <a href="#">
