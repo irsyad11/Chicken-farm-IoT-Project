@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
+import Button from "../../component/landing/Button";
 
 let Links = [
   { nama: "Home", link: "/" },
@@ -27,7 +27,7 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <Button text="Masuk" />
+            <Button text="masuk" />
           </ul>
         </div>
       </div>

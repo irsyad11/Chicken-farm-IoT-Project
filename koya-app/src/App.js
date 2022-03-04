@@ -1,24 +1,25 @@
 import { Route, Routes } from "react-router-dom";
-import Button from "./component/landing/Button";
-import Footer from "./component/landing/Footer";
-import Navbar from "./component/landing/Navbar";
-import Index from "./layouts/landing/Index";
+import { Chart } from "./components/Chart";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Account from "./pages/Account";
+import Home from "./pages/Home";
 
-export default function App() {
+function App() {
   return (
     <>
-      <Navbar />
-
-      <div className="bg-slate-50"></div>
-
-      <Routes>
-        <Route path="/" element={<Index />}></Route>
-        <Route path="/tentang-kami" element={<Index />}></Route>
-        <Route path="/login" element={<Index />}></Route>
-        <Route path="/dashboard" element={<Index />}></Route>
-      </Routes>
-
-      <Footer />
+      <div className="flex bg-slate-200">
+        <Navbar />
+        <div className="w-full flex flex-col">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="account" element={<Account />} />
+          </Routes>
+        </div>
+      </div>
     </>
   );
 }
+
+export default App;
